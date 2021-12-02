@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+}
+
 .App {
   text-align: center;
 }
@@ -13,21 +22,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +29,88 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.4;
+  background-color: #fcfcfc;
+  color: #1f1f1f;
+}
+h1 {
+  font-weight: 300;
+  font-size: 30px;
+    margin-bottom: 14px;
+}
+.meme-container {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  background: white;
+  text-align: center;
+  padding-top: 20px;
+}
+input,
+button {
+  width: 90%;
+  height: 40px;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+}
+input {
+  padding: 5px 8px;
+  margin: 8px;
+  border-radius: 5px;
+}
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: teal;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 100px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgba(70, 90, 126, 0.4);
+  color: white;
+  transition: 0.5s;
+  }
+
+
+.meme {
+  position: relative;
+}
+.meme > img {
+  width: 100vw;
+  height: auto;
+  background: cover;
+  margin-bottom: -5px;
+  background-repeat: no-repeat;
+}
+.meme > h2 {
+  position: absolute;
+  max-width: 36em;
+  font-size: 30px;
+  text-align: center;
+  left: 49%;
+  transform: translateX(-50%);
+  margin: 0.3em 0;
+  padding: 0;
+  font-family: impact, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+.meme > .top {
+  top: 0.1em;
+}
+.meme > .bottom {
+  bottom: 0.1em;
 }
